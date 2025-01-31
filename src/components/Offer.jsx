@@ -46,7 +46,7 @@ const Offer = () => {
   }
   return (
     <div
-      id="offer"
+      id="oferta"
       className="w-full bg-black flex flex-col items-center p-7 text-center gap-5"
     >
       <h1 className="text-5xl">Oferta</h1>

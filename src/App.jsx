@@ -3,7 +3,7 @@ import Contact from "./components/Contact"
 import Header from "./components/Header"
 import Offer from "./components/Offer"
 import Footer from "./components/Footer"
-
+import ArrowUp from "./components/ArrowUp"
 function App() {
   
 
@@ -14,6 +14,7 @@ function App() {
       <Offer/>
       <Contact/>
       <Footer/>
+      <ArrowUp />
     </div>
   )
 }

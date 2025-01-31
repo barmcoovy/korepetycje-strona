@@ -1,7 +1,12 @@
 import React from "react";
 
-const Header = ({ navigateFunction }) => {
-  const links = ["O Mnie", "Oferta", "Kontakt"];
+const Header = () => {
+  const links = ["o mnie", "oferta", "kontakt"];
+
+  const navigateFunction = (value)=>{
+    const section = document.getElementById(value);
+    section.scrollIntoView({behavior: 'smooth'});
+  }
   return (
     <div
       id="header-container"
@@ -11,8 +16,8 @@ const Header = ({ navigateFunction }) => {
         {links.map((value, key) => {
           return (
             <span
-              onClick={()=>navigateFunction}
-              className="cursor-pointer md:text-2xl text-[.8rem] hover:drop-shadow-3xl transition delay-50 duration-200 ease-in-out" 
+              onClick={()=>navigateFunction(value)}
+              className="capitalize cursor-pointer md:text-2xl  hover:drop-shadow-3xl transition delay-50 duration-200 ease-in-out" 
               key={key}
             >
               {value}
@@ -21,7 +26,7 @@ const Header = ({ navigateFunction }) => {
         })}
       </div>
       <div>
-        <span className="border-1 p-4 rounded-4xl border-green-500 cursor-pointer hover:bg-green-500 transition delay-50 duration-200 ease-out">
+        <span className="hidden sm:block border-1 p-4 rounded-4xl border-green-500 cursor-pointer hover:bg-green-500 transition delay-50 duration-200 ease-out">
           <a href="mailto:bartoszmiecznikowski853@gmail.com">Napisz do mnie</a> 
         </span>
       </div>
