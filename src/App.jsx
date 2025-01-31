@@ -1,6 +1,8 @@
 import AboutMe from "./components/AboutMe"
+import Contact from "./components/Contact"
 import Header from "./components/Header"
 import Offer from "./components/Offer"
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -10,6 +12,8 @@ function App() {
       <Header/>
       <AboutMe/>
       <Offer/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

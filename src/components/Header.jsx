@@ -12,7 +12,7 @@ const Header = ({ navigateFunction }) => {
           return (
             <span
               onClick={()=>navigateFunction}
-              className="cursor-pointer md:text-2xl text-[.8rem]"
+              className="cursor-pointer md:text-2xl text-[.8rem] hover:drop-shadow-3xl transition delay-50 duration-200 ease-in-out" 
               key={key}
             >
               {value}
@@ -21,7 +21,7 @@ const Header = ({ navigateFunction }) => {
         })}
       </div>
       <div>
-        <span className="border-1 p-4 rounded-4xl border-green-500 cursor-pointer hover:bg-green-500 transition-colors">
+        <span className="border-1 p-4 rounded-4xl border-green-500 cursor-pointer hover:bg-green-500 transition delay-50 duration-200 ease-out">
           <a href="mailto:bartoszmiecznikowski853@gmail.com">Napisz do mnie</a> 
         </span>
       </div>

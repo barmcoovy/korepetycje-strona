@@ -33,7 +33,7 @@ const Offer = () => {
       question:
         "Czy posiadam jakiś kanał w social mediach, na który wrzucam przykładowe zagadnienia?",
       answer:
-        "Obecnie nie posiadam żadnego konta w social mediach, ale jest w planach, aby je założyć.",
+        "Obecnie nie posiadam żadnego konta w social mediach.",
     },
   ];
   const toogleVisibility = (id) =>{

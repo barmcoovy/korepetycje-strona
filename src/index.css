@@ -3,6 +3,7 @@
 
 @theme{
   --font-main: "Montserrat", serif;
+  --drop-shadow-3xl: 0 0px 15px white; 
 }
 
 *{
